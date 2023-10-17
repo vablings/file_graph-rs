@@ -6,7 +6,3 @@ authors = ["vablings"]
 description = "A tiny crate to generate a tree like structure starting from a folder and branching inwards"
 repository = "https://github.com/vablings/file_graph-rs"
 
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[dependencies]
