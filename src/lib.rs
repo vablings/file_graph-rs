@@ -13,7 +13,7 @@ enum FileTreeError {
 impl fmt::Display for FileTreeError {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         match self {
-            FileTreeError::SymlinkError(T) => write!(f, "Symlink found {T}"),
+            FileTreeError::SymlinkError(err) => write!(f, "Symlink found {err}"),
             FileTreeError::UnknownEntryType => write!(f, "Entry is not a File, Folder or Symlink"),
             FileTreeError::FilePathError => write!(f, "Failed to coerce &Path into String"),
         }
